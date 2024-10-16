@@ -1,6 +1,6 @@
-﻿. (Join-Path $PSScriptRoot Users.ps1)
-. (Join-Path $PSScriptRoot Event-Logs.ps1)
-
+﻿./"Local User Menu"/StringHelper.ps1
+./"Local User Menu"/Event-Logs.ps1
+./"Local User Menu"/Users.ps1
 clear
 
 $Prompt = "`n"
@@ -78,7 +78,7 @@ while($operation){
 
         Write-Host "User: $name is created." | Out-String
     }
-
+    }
 
     # Remove a user
     elseif($choice -eq 4){
@@ -194,6 +194,6 @@ while($operation){
 
 }
 }
-
+}
 
 
