@@ -11,4 +11,14 @@ function pageCount(){
 
 }
 
-pageCount
+#pageCount
+
+function countingCurlAccess(){
+
+	grep "curl" "$file" | awk '{print $1, $12}' | sort | uniq -c | sort -nr
+
+}
+
+countingCurlAccess
+
+
